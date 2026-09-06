@@ -1,1 +1,2 @@
 # jnl18045.github.io
+This is My business site, built for those who enjoy buying, and reading e-books, but don't always know exactly what to read. The idea is to have a "blind date" with a book. Where a customer may open the site, choose from a list of book genres and length. They pay for a books price and are introduced to a book they may now "unwrap" and read. Naturally if the user decides they dont like the book they were on a date with, they can refund or exchange for a new date.
