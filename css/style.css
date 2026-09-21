@@ -1,11 +1,11 @@
 body {
     font-family: Georgia, serif;
     color: #262220;
-    background-color: #f8f5f0;
+    background-color: #FFF7ED;
 }
 
 header {
-    background-color: #2f4a3d;
+    background-color: #C2410C;
     color: #ffffff;
     padding: 20px;
 }
@@ -36,7 +36,7 @@ nav a[aria-current="page"] {
 }
 
 a:focus {
-    outline: 3px solid #a8541f;
+    outline: 3px solid #9A3412;
     outline-offset: 2px;
 }
 
@@ -52,13 +52,13 @@ h1 {
 
 h2 {
     font-size: 1.75rem;
-    color: #2f4a3d;
+    color: #9A3412;
     margin-bottom: 8px;
 }
 
 h3 {
     font-size: 1.25rem;
-    color: #2f4a3d;
+    color: #9A3412;
 }
 
 p {
