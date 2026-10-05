@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact - Blind Date with a Book</title>
@@ -8,38 +10,74 @@
 
 <body>
 
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header>
-        <h1>Blind Date with a Book</h1>
+<header>
+    <h1>Blind Date with a Book</h1>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="work.html">Our Books</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html" aria-current="page">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Our Books</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+</header>
 
-    <main id="main-content">
+<main id="main-content">
 
-        <h2>Contact</h2>
+    <h2>Contact Blind Date with a Book</h2>
 
-        <p>
-            Have a question about Blind Date with a Book? We would love to
-            hear from you.
-        </p>
+    <p>
+        Have a question about our books or need help finding your next
+        reading adventure? Fill out the form below and let us know how
+        we can help.
+    </p>
 
-        <p>
-            Contact information and additional details will be added soon.
-        </p>
+    <form class="contact-form" action="mailto:jnl18045@example.com" method="post" enctype="text/plain">
 
-    </main>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
 
-    <footer>
-        <p>&copy; 2026 Blind Date with a Book</p>
-    </footer>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="genre">Preferred Genre</label>
+        <select id="genre" name="genre" required>
+            <option value="">Select a genre</option>
+            <option value="fiction">Fiction</option>
+            <option value="romance">Romance</option>
+            <option value="mystery">Mystery</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="science-fiction">Science Fiction</option>
+            <option value="horror">Horror</option>
+            <option value="young-adult">Young Adult</option>
+            <option value="nonfiction">Nonfiction</option>
+            <option value="surprise-me">Surprise Me</option>
+        </select>
+
+        <label for="length">Preferred Book Length</label>
+        <select id="length" name="length" required>
+            <option value="">Select a length</option>
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+            <option value="any">Any Length</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit">Send My Book Question</button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Blind Date with a Book</p>
+</footer>
 
 </body>
+
 </html>
