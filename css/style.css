@@ -93,3 +93,65 @@ th {
 tbody tr:nth-child(even) {
     background-color: #FFF7ED;
 }
+/* Contact Form */
+
+.contact-form {
+    background-color: #ffffff;
+    border: 2px solid #C2410C;
+    padding: 32px;
+    margin-top: 24px;
+    border-radius: 8px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    color: #9A3412;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    color: #262220;
+    background-color: #FFF7ED;
+    border: 1px solid #9A3412;
+    border-radius: 4px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: 3px solid #C2410C;
+    outline-offset: 2px;
+}
+
+.contact-form button {
+    display: block;
+    margin-top: 24px;
+    padding: 14px 24px;
+    font-family: Georgia, serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #C2410C;
+    border: 2px solid #9A3412;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #9A3412;
+}
+
+.contact-form button:focus {
+    outline: 3px solid #C2410C;
+    outline-offset: 3px;
+}
