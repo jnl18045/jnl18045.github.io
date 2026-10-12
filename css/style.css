@@ -155,3 +155,55 @@ tbody tr:nth-child(even) {
     outline: 3px solid #C2410C;
     outline-offset: 3px;
 }
+
+/* Book Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+}
+
+.gallery-item {
+    margin: 0;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 2px solid #C2410C;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery-item figcaption {
+    padding: 12px 4px 4px;
+    color: #9A3412;
+    font-weight: bold;
+}
+
+.media-section,
+.media-sources {
+    margin-top: 36px;
+}
+
+.media-section audio {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.media-sources p {
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 560px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
