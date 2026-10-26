@@ -70,6 +70,9 @@
 
         <button type="submit">Send My Book Question</button>
 
+<button onclick="getLocation()">See How Close You Are</button>
+<p id="location-message"></p>
+
     </form>
 
 </main>
@@ -77,6 +80,28 @@
 <footer>
     <p>&copy; 2026 Blind Date with a Book</p>
 </footer>
+
+<script>
+    function getLocation() {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    }
+
+    function showPosition(position) {
+        var lat = position.coords.latitude.toFixed(1);
+        var lon = position.coords.longitude.toFixed(1);
+
+        document.getElementById("location-message").textContent =
+            "You're near " + lat + ", " + lon +
+            ". Blind Date with a Book welcomes readers looking to discover their next favorite story. Contact us to learn more about our books and events.";
+    }
+
+    function showError(error) {
+        document.getElementById("location-message").textContent =
+            "We couldn't get your location, but that's alright. You can still browse our books and contact Blind Date with a Book to learn more.";
+    }
+</script>
+</body>
+</html>
 
 </body>
 
