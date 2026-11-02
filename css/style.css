@@ -15,6 +15,12 @@ header nav a {
     margin-right: 16px;
 }
 
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 nav a[aria-current="page"] {
     font-weight: bold;
     text-decoration: underline;
@@ -72,6 +78,7 @@ footer {
     color: #666666;
     padding: 20px;
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -93,7 +100,6 @@ th {
 tbody tr:nth-child(even) {
     background-color: #FFF7ED;
 }
-/* Contact Form */
 
 .contact-form {
     background-color: #ffffff;
@@ -156,7 +162,6 @@ tbody tr:nth-child(even) {
     outline-offset: 3px;
 }
 
-/* Book Gallery */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -202,8 +207,34 @@ tbody tr:nth-child(even) {
     overflow-wrap: anywhere;
 }
 
+@media (min-width: 600px) {
+    header nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
 @media (max-width: 560px) {
+    main {
+        padding: 24px 16px;
+    }
+
     .gallery-grid {
         grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
     }
 }
